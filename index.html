@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WAGMI</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	
+</head>
+<body>
+<main>
+	<div class="cont">
+		<div class="side">
+			<img src="konnil.png">
+		</div>
+		<div class="center">
+			<h1>TRANZION</h1>
+			<p>$TRANZION</p>
+			<div class="ca"><p>CA:SOON <p id="ca"></p></p></div>
+			<div><img id="put" src="put.png"></div>
+			<div class="soc">
+				<a href="https://x.com/TranzionSol" target="_blank"><img src="x.png"></a>
+				<a href="https://t.me/TRANZIONSOL" target="_blank"><img src="tg.png"></a>
+				<a href="https://dexscreener.com/" target="_blank"><img src="dex.png"></a>
+			</div>
+		</div>
+		<div class="side">
+			<img src="konnir.png">
+		</div>	
+	</div>
+</main>
+<script type="text/javascript">
+	document.querySelector('#ca').addEventListener(
+  'click',
+  async (event) => {
+    const code = event.target.innerText;
+    await navigator.clipboard.writeText(code);
+    alert(`${code} copied!`);
+  }
+);
+</script>
+</body>
+
+
